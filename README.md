@@ -1,3 +1,18 @@
+# PROJETO FRONT END COM REACT - SPACEZONE 
+
+## PROJETO EM CONSTRUÇÃO!! 
+O SpaceZone é um site e-commerce de
+camisetas personalizadas com tema
+espacial. O usuário é capaz de ver
+produtos disponíveis, visualizar por filtros,
+adicionar ao carrinho, remover e ver as
+quantidades selecionadas e o valor total do
+carrinho. Foi utilizado na construção do
+projeto: React, Json, CSS, Styled-
+Components, Hooks e localStorage.
+
+# ----------------------------------------------------------------------------------------
+
 # projeto-frontendreact
 
 Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar a estrutura do que consideramos a estrutura do React. O objetivo é que funcione como o front-end de um E-Commerce
@@ -117,4 +132,3 @@ https://user-images.githubusercontent.com/11279432/197185533-14582ca3-9eb0-4a5a-
     </details>
 - Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/S9XChPZravP3WdxL6) 
 - Utilize o **surge** para fazer o deploy do seu projeto.
-
