@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { Header } from "../components/Header/Header.js";
 import { SectionProducts } from "../components/SectionProducts/SectionProducts.js";
 import { Filters } from "../components/Filters/Filters.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import products from "../assets/products.json";
 import { ContainerMain, SectionHome, ContainerProducts } from "./styled";
 import { Footer } from "../components/Footer/Footer.js";
@@ -31,6 +31,20 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }
   }
+
+  .message {
+    height: 90px;
+    width: 250px;
+    position: absolute;
+    margin: 0 auto;
+    /* right: 0; */
+    /* top: 10%; */
+    background-color: red;
+    font-size:1.1rem;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
 `;
 
 function App(props) {
@@ -43,23 +57,63 @@ function App(props) {
   const [category, setCategory] = useState("");
 
   const [cart, setCart] = useState([]);
+  // const [message, setMessage] = useState(false);
 
-  const addToCart = (product) => {
-    const newCart = [...cart];
-    
-    const productFound = newCart.find(
-      (productInCart) => productInCart.id === product.id
-    );
-    
-    if (!productFound) {
-      const newProduct = { ...product, quantity: 1 };
-      newCart.push(newProduct);
-    } else {
-      productFound.quantity++;
-    }
-    
+
+
+    const addToCart = (item) => {
+      const newCart = [...cart]
+
+      const productFound = newCart.find(
+          (productInCart) => productInCart.id === item.id
+      )
+
+      if (!productFound) {
+          const newProduct = {...item, quantity: 1}
+          newCart.push(newProduct)
+      } else {
+          productFound.quantity++
+      }
+
+      setCart(newCart)
+      localStorage.setItem('cart', JSON.stringify(newCart));
+  }
+
+
+  const addQuantity = (index) => {
+    // console.log(index)
+    const newCart = [...cart]
+    newCart[index].quantity++
+    setCart(newCart)
+    localStorage.setItem('cart', JSON.stringify(newCart));
+  }
+
+  const removeQuantity = (index) => {
+    const newCart = [...cart]
+    if(newCart[index].quantity === 1) {
+      newCart.splice(index,1)
+      setCart(newCart)
+      localStorage.setItem('cart', JSON.stringify(newCart));
+      return false
+    } 
+    newCart[index].quantity--
+    setCart(newCart)
+    localStorage.setItem('cart', JSON.stringify(newCart));
+  }
+
+  const removeItem = (index) => {
+    const newCart = [...cart]
+    newCart.splice(index,1)
+    setCart(newCart)
+    localStorage.setItem('cart', JSON.stringify(newCart));
+  }
+
+  useEffect(() => {
+    const newCart = JSON.parse(window.localStorage.getItem("cart")) || [];
+
     setCart(newCart);
-  };
+  }, []);
+
 
   return (
     <>
@@ -68,6 +122,9 @@ function App(props) {
         searchProducts={searchProducts}
         setSearchProducts={setSearchProducts}
         cart={cart}
+        addQuantity={addQuantity}
+        removeQuantity={removeQuantity}
+        removeItem={removeItem}
       />
 
       <SectionHome>
@@ -142,8 +199,19 @@ function App(props) {
               }
             })
             .map((product) => {
-              return <SectionProducts key={product.id} product={product} addToCart={addToCart}/>;
+              return (
+                <SectionProducts
+                  key={product.id}
+                  product={product}
+                  addToCart={addToCart}
+                />
+              );
             })}
+          {/* {message && (
+            <div className="message">
+              Esse produto já foi adicionado ao carrinho!
+            </div>
+          )} */}
         </ContainerProducts>
       </ContainerMain>
       <Footer />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Cards } from "./styled";
 import { priceFormatter } from "../../utils/priceFormatter";
+// import "../../styles.css"
 
 export function SectionProducts(props) {
 
