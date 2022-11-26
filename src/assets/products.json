@@ -1,0 +1,189 @@
+[
+    {
+        "id": 1,
+        "name": "Camiseta Astronauta no Espaço",
+        "color": "Azul caneta",
+        "price": 55.00,
+        "description": "Astronauta fofo acenando com a mão no buraco do espaço",
+        "category": "Astronauta",
+        "image": "img/camisa-azul-astronauta-espaço.png"
+    },
+    {
+        "id": 2,
+        "name": "Camiseta Astronauta na Rosquinha",
+        "color": "Roxo claro",
+        "price": 55.00,
+        "description": "Astronauta fofo em Donut",
+        "category": "Astronauta",
+        "image": "img/camisa-azul-astronauta-rosquinha.png"
+    },
+    {
+        "id": 3,
+        "name": "Camiseta Gatinho Cinza no Planeta Terra",
+        "color": "Lilás",
+        "price": 60.00,
+        "description": "Gatinho fofo agarrado no planeta terra",
+        "category": "Animais",
+        "image": "img/camisa-azul-claro-gato-agarrado-planeta.png"
+    },
+    {
+        "id": 4,
+        "name": "Camiseta Vaquinha em cima da Lua",
+        "color": "Cinza Claro",
+        "price": 60.00,
+        "description": "Vaquinha fofa dormindo na lua",
+        "category": "Animais",
+        "image": "img/camisa-cinza-claro-vaca-lua.png"
+    },
+    {
+        "id": 5,
+        "name": "Camiseta Alien segurando uma Placa",
+        "color": "Cinza Escuro",
+        "price": 65.90,
+        "description": "Alienígena fofo segurando placa espacial",
+        "category": "Alien",
+        "image": "img/camisa-cinza-escuro-alien-segura-bandeira.png"
+    },
+    {
+        "id": 6,
+        "name": "Camiseta Preguiça deitada na Lua",
+        "color": "Cinza Escuro",
+        "price": 64.50,
+        "description": "Preguiça fofa deitada na lua",
+        "category": "Animais",
+        "image": "img/camisa-cinza-escuro-preguica-emcima-planeta.png"
+    },
+    {
+        "id": 7,
+        "name": "Camiseta Gatinho em cima do Foguete",
+        "color": "Cinza Claro",
+        "price": 65.00,
+        "description": "Gatinho astronauta fofo andando de foguete",
+        "category": "Animais",
+        "image": "img/camisa-cinza-gato-astronauta-foguete.png"
+    },
+    {
+        "id": 8,
+        "name": "Camiseta Panda Astronauta no Espaço",
+        "color": "Lilás",
+        "price": 62.50,
+        "description": "Panda astronauta fofoo flutuando no espaço",
+        "category": "Animais",
+        "image": "img/camisa-lilas-panda-astronauta-planetas.png"
+    },
+    {
+        "id": 9,
+        "name": "Camiseta Alien lendo Jornal",
+        "color": "Preto",
+        "price": 70.00,
+        "description":  "Alienígena fofo lendo jornal",
+        "category": "Alien",
+        "image": "img/camisa-preta-alien-sentado-planeta.png"
+    },
+    
+    {
+        "id": 10,
+        "name": "Camiseta Astronauta flutuando",
+        "color": "Preto",
+        "price": 49.00,
+        "description": "Astronauta flutuando no espaço",
+        "category": "Astronauta",
+        "image": "img/camisa-preta-astronauta.png"
+    },
+    {
+        "id": 11,
+        "name": "Camiseta Astronauta em cima do Planeta Terra",
+        "color": "Preto",
+        "price": 55.90,
+        "description": "Astronauta fofo com o planeta terra",
+        "category": "Astronauta",
+        "image": "img/camisa-preta-astronauta-emcima-planeta.png"
+    },
+    {
+        "id": 12,
+        "name": "Camiseta Astronauta tocando Guitarra",
+        "color": "Preto",
+        "price": 55.90,
+        "description": "Astronauta fofo tocando guitarra",
+        "category": "Astronauta",
+        "image": "img/camisa-preta-astronauta-guitarra.png"
+    },
+    {
+        "id": 13,
+        "name": "Camiseta Astronauta e Planeta",
+        "color": "Preto",
+        "price": 55.90,
+        "description": "Astronauta fofo flutuando com planeta no espaço",
+        "category": "Astronauta",
+        "image": "img/camisa-preta-astronauta-planeta.png"
+    },
+    {
+        "id": 14,
+        "name": "Camiseta Cachorro Astronauta agarrado no Planeta",
+        "color": "Preto",
+        "price": 70.00,
+        "description": "Lindo astronauta shiba inu no Planeta Terra",
+        "category": "Animais",
+        "image": "img/camisa-preta-cachorro-planeta.png"
+    },
+    
+    {
+        "id": 15,
+        "name": "Camiseta Gato na Nave pegando Peixinho",
+        "color": "Preto",
+        "price": 75.00,
+        "description": "Gatinho fofo pegando peixe",
+        "category": "Animais",
+        "image": "img/camisa-preta-gato-astronauta-peixe.png"
+    },
+    
+    {
+        "id": 16,
+        "name": "Camiseta Gatinho empurrando Lua",
+        "color": "Rosa Claro",
+        "price": 75.00,
+        "description": "Gatinho fofo empurrando Lua",
+        "category": "Animais",
+        "image": "img/camisa-rosa-gato-planeta.png"
+    },
+    
+    {
+        "id": 17,
+        "name": "Camiseta Gatinho Astronauta em cima de Planeta",
+        "color": "Rosa Escuro",
+        "price": 72.90,
+        "description": "Gatinho astronauta fofo sentado no planeta de fios",
+        "category": "Animais",
+        "image": "img/camisa-roxa-gato-emcima-planeta.png"
+    },
+    
+    {
+        "id": 18,
+        "name": "Camiseta Alien com Foguete",
+        "color": "Verde Escuro",
+        "price": 45.00,
+        "description": "Alienígena fofo voando com foguete",
+        "category": "Alien",
+        "image": "img/camisa-verde-alien.png"
+    },
+    
+    {
+        "id": 19,
+        "name": "Camiseta Astronauta em cima do Hamburguer",
+        "color": "Vermelho",
+        "price": 71.50,
+        "description": "Astronauta fofo em cima de um hambúrguer fazendo o sinal da paz",
+        "category": "Astronauta",
+        "image": "img/camisa-vinho-astronauta-hamburguer.png"
+    },
+    
+    {
+        "id": 20,
+        "name": "Camiseta Alien em cima de uma prancha no Espaço",
+        "color": "Roxo",
+        "price": 47.00,
+        "description": "Alienígena fofo surfando no espaço",
+        "category": "Alien",
+        "image": "img/camisa-violeta-alien-prancha-foguete.png"
+    }
+]
