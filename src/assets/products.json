@@ -2,18 +2,18 @@
     {
         "id": 1,
         "name": "Camiseta Astronauta no Espaço",
-        "color": "Azul caneta",
+        "color": "Azul escurp",
         "price": 55.00,
-        "description": "Astronauta fofo acenando com a mão no buraco do espaço",
+        "description": "Camiseta azul Astronauta fofo acenando no espaço",
         "category": "Astronauta",
         "image": "img/camisa-azul-astronauta-espaço.png"
     },
     {
         "id": 2,
         "name": "Camiseta Astronauta na Rosquinha",
-        "color": "Roxo claro",
+        "color": "Azul claro",
         "price": 55.00,
-        "description": "Astronauta fofo em Donut",
+        "description": "Camiseta azul claro com Astronauta em cima Donut",
         "category": "Astronauta",
         "image": "img/camisa-azul-astronauta-rosquinha.png"
     },
@@ -22,43 +22,43 @@
         "name": "Camiseta Gatinho Cinza no Planeta Terra",
         "color": "Lilás",
         "price": 60.00,
-        "description": "Gatinho fofo agarrado no planeta terra",
+        "description": "Camiseta lilás com um Gatinho fofo agarrado no planeta terra",
         "category": "Animais",
         "image": "img/camisa-azul-claro-gato-agarrado-planeta.png"
     },
     {
         "id": 4,
-        "name": "Camiseta Vaquinha em cima da Lua",
+        "name": "Camiseta Vaquinha fofa em cima da Lua",
         "color": "Cinza Claro",
         "price": 60.00,
-        "description": "Vaquinha fofa dormindo na lua",
+        "description": "Camiseta cinza claro com uma Vaquinha fofa dormindo na lua",
         "category": "Animais",
         "image": "img/camisa-cinza-claro-vaca-lua.png"
     },
     {
         "id": 5,
-        "name": "Camiseta Alien segurando uma Placa",
+        "name": "Camiseta Alienígena com uma placa espacial",
         "color": "Cinza Escuro",
         "price": 65.90,
-        "description": "Alienígena fofo segurando placa espacial",
+        "description": "Camiseta cinza escuro com um Alien segurando uma placa espacial",
         "category": "Alien",
         "image": "img/camisa-cinza-escuro-alien-segura-bandeira.png"
     },
     {
         "id": 6,
-        "name": "Camiseta Preguiça deitada na Lua",
+        "name": "Camiseta Preguiça dormindo deitada na Lua",
         "color": "Cinza Escuro",
         "price": 64.50,
-        "description": "Preguiça fofa deitada na lua",
+        "description": "Camiseta cinza escuro com uma Preguiça dormindo na lua",
         "category": "Animais",
         "image": "img/camisa-cinza-escuro-preguica-emcima-planeta.png"
     },
     {
         "id": 7,
-        "name": "Camiseta Gatinho em cima do Foguete",
+        "name": "Camiseta Gatinho acenando em cima do Foguete",
         "color": "Cinza Claro",
         "price": 65.00,
-        "description": "Gatinho astronauta fofo andando de foguete",
+        "description": "Camiseta cinza claro com um Gato astronauta andando de foguete",
         "category": "Animais",
         "image": "img/camisa-cinza-gato-astronauta-foguete.png"
     },
@@ -67,26 +67,26 @@
         "name": "Camiseta Panda Astronauta no Espaço",
         "color": "Lilás",
         "price": 62.50,
-        "description": "Panda astronauta fofoo flutuando no espaço",
+        "description": "Camiseta lilás com um Panda astronauta fofo flutuando no espaço",
         "category": "Animais",
         "image": "img/camisa-lilas-panda-astronauta-planetas.png"
     },
     {
         "id": 9,
-        "name": "Camiseta Alien lendo Jornal",
+        "name": "Camiseta Alienígena lendo jornal em cima do planeta",
         "color": "Preto",
         "price": 70.00,
-        "description":  "Alienígena fofo lendo jornal",
+        "description": "Camiseta preta com um Alien fofo lendo jornal em cima de um planeta",
         "category": "Alien",
         "image": "img/camisa-preta-alien-sentado-planeta.png"
     },
     
     {
         "id": 10,
-        "name": "Camiseta Astronauta flutuando",
+        "name": "Camiseta SpaceZone Astronauta flutuando",
         "color": "Preto",
         "price": 49.00,
-        "description": "Astronauta flutuando no espaço",
+        "description": "Camiseta preta com um Astronauta fofo flutuando no espaço",
         "category": "Astronauta",
         "image": "img/camisa-preta-astronauta.png"
     },
@@ -95,94 +95,94 @@
         "name": "Camiseta Astronauta em cima do Planeta Terra",
         "color": "Preto",
         "price": 55.90,
-        "description": "Astronauta fofo com o planeta terra",
+        "description": "Camiseta preta com um Astronauta fofo com o planeta terra",
         "category": "Astronauta",
         "image": "img/camisa-preta-astronauta-emcima-planeta.png"
     },
     {
         "id": 12,
-        "name": "Camiseta Astronauta tocando Guitarra",
+        "name": "Camiseta Astronauta tocando uma Guitarra",
         "color": "Preto",
         "price": 55.90,
-        "description": "Astronauta fofo tocando guitarra",
+        "description": "Camiseta preta com um Astronauta fofo tocando guitarra",
         "category": "Astronauta",
         "image": "img/camisa-preta-astronauta-guitarra.png"
     },
     {
         "id": 13,
-        "name": "Camiseta Astronauta e Planeta",
+        "name": "Camiseta Astronauta segurando um Planeta",
         "color": "Preto",
         "price": 55.90,
-        "description": "Astronauta fofo flutuando com planeta no espaço",
+        "description": "Camiseta preta com Astronauta flutuando um planeta no espaço",
         "category": "Astronauta",
         "image": "img/camisa-preta-astronauta-planeta.png"
     },
     {
         "id": 14,
-        "name": "Camiseta Cachorro Astronauta agarrado no Planeta",
+        "name": "Camiseta Cachorro agarrado no planeta",
         "color": "Preto",
         "price": 70.00,
-        "description": "Lindo astronauta shiba inu no Planeta Terra",
+        "description": "Camiseta preta com um lindo astronauta shiba inu no Planeta Terra",
         "category": "Animais",
         "image": "img/camisa-preta-cachorro-planeta.png"
     },
     
     {
         "id": 15,
-        "name": "Camiseta Gato na Nave pegando Peixinho",
+        "name": "Camiseta Gatinho na Nave pegando um Peixinho",
         "color": "Preto",
         "price": 75.00,
-        "description": "Gatinho fofo pegando peixe",
+        "description": "Camiseta preta com um Gatinho fofo pegando peixe",
         "category": "Animais",
         "image": "img/camisa-preta-gato-astronauta-peixe.png"
     },
     
     {
         "id": 16,
-        "name": "Camiseta Gatinho empurrando Lua",
+        "name": "Camiseta Gatinho divertido empurrando a Lua",
         "color": "Rosa Claro",
         "price": 75.00,
-        "description": "Gatinho fofo empurrando Lua",
+        "description": "Camiseta rosa claro com um Gatinho fofo empurrando Lua",
         "category": "Animais",
         "image": "img/camisa-rosa-gato-planeta.png"
     },
     
     {
         "id": 17,
-        "name": "Camiseta Gatinho Astronauta em cima de Planeta",
+        "name": "Camiseta Gato Astronauta em cima do planeta",
         "color": "Rosa Escuro",
         "price": 72.90,
-        "description": "Gatinho astronauta fofo sentado no planeta de fios",
+        "description": "Camiseta rosa escuro com Gatinho astronauta no planeta de fios",
         "category": "Animais",
         "image": "img/camisa-roxa-gato-emcima-planeta.png"
     },
     
     {
         "id": 18,
-        "name": "Camiseta Alien com Foguete",
+        "name": "Camiseta Alienígena divertido com Foguete",
         "color": "Verde Escuro",
         "price": 45.00,
-        "description": "Alienígena fofo voando com foguete",
+        "description": "Camiseta verde com Alienígena fofo voando com foguete",
         "category": "Alien",
         "image": "img/camisa-verde-alien.png"
     },
     
     {
         "id": 19,
-        "name": "Camiseta Astronauta em cima do Hamburguer",
+        "name": "Camiseta Astronauta em cima de um Hamburguer",
         "color": "Vermelho",
         "price": 71.50,
-        "description": "Astronauta fofo em cima de um hambúrguer fazendo o sinal da paz",
+        "description": "Camiseta vermelha com um Astronauta no hambúrguer",
         "category": "Astronauta",
         "image": "img/camisa-vinho-astronauta-hamburguer.png"
     },
     
     {
         "id": 20,
-        "name": "Camiseta Alien em cima de uma prancha no Espaço",
+        "name": "Camiseta Alienígena em cima da prancha no Espaço",
         "color": "Roxo",
         "price": 47.00,
-        "description": "Alienígena fofo surfando no espaço",
+        "description": "Camiseta roxa com um Alien surfando no espaço",
         "category": "Alien",
         "image": "img/camisa-violeta-alien-prancha-foguete.png"
     }

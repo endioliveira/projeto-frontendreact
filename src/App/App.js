@@ -37,8 +37,6 @@ const GlobalStyle = createGlobalStyle`
     width: 250px;
     position: absolute;
     margin: 0 auto;
-    /* right: 0; */
-    /* top: 10%; */
     background-color: red;
     font-size:1.1rem;
     color: white;
@@ -51,15 +49,12 @@ function App(props) {
   const [searchProducts, setSearchProducts] = useState("");
   const [minimumPrice, setMinimumPrice] = useState(-Infinity);
   const [maximumPrice, setMaximumPrice] = useState(Infinity);
-  const [sorting, setSorting] = useState("name");
-  const [order, setOrder] = useState("asc"); //asc: abreviação para ordem crescente
+  const [sorting, setSorting] = useState("");
+  const [order, setOrder] = useState("asc"); 
   const [color, setColor] = useState("");
   const [category, setCategory] = useState("");
-
   const [cart, setCart] = useState([]);
   // const [message, setMessage] = useState(false);
-
-
 
     const addToCart = (item) => {
       const newCart = [...cart]
@@ -81,7 +76,6 @@ function App(props) {
 
 
   const addQuantity = (index) => {
-    // console.log(index)
     const newCart = [...cart]
     newCart[index].quantity++
     setCart(newCart)
@@ -108,9 +102,13 @@ function App(props) {
     localStorage.setItem('cart', JSON.stringify(newCart));
   }
 
+  const totalOfProducts = cart.reduce(
+    (acc, item) => item.price * item.quantity + acc,
+    0
+)
+
   useEffect(() => {
     const newCart = JSON.parse(window.localStorage.getItem("cart")) || [];
-
     setCart(newCart);
   }, []);
 
@@ -125,6 +123,7 @@ function App(props) {
         addQuantity={addQuantity}
         removeQuantity={removeQuantity}
         removeItem={removeItem}
+        totalOfProducts={totalOfProducts}
       />
 
       <SectionHome>
@@ -137,6 +136,7 @@ function App(props) {
             }}
           />
         </div>
+ 
       </SectionHome>
 
       <ContainerMain>
@@ -187,8 +187,10 @@ function App(props) {
               switch (sorting) {
                 case "price":
                   return currentProduct.price - nextProduct.price;
-                default:
+                case "name":
                   return currentProduct.name.localeCompare(nextProduct.name);
+                default:
+                  return ""
               }
             })
             .sort(() => {

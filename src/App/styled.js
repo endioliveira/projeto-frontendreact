@@ -1,26 +1,12 @@
 import styled from "styled-components";
-import background from "../assets/fundo-home.png";
-
-export const ContainerMain = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10%;
-
-  h2 {
-    color: #fff;
-  }
-`;
+import backgroundModel2 from "../assets/fundo-home2.png";
 
 export const SectionHome = styled.section`
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 90px; */
   margin-bottom: 2rem;
-
-  background-image: url(${background});
+  background-image: url(${backgroundModel2});
   background-size: cover;
   height: 75vh;
   background-size: cover;
@@ -28,21 +14,28 @@ export const SectionHome = styled.section`
   background-position: right bottom;
 
   .typing {
-
     margin-top: 6rem;
     text-align: center;
     font-size: 7rem;
-    margin-left: 15rem;
+    margin-left: 5rem;
     padding: 3px;
     color: #ffff;
     text-shadow: 0 0 15px #fff;
   }
+`;
 
-
+export const ContainerMain = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  h2 {
+    color: #fff;
+    font-size: 2rem;
+  }
 `;
 
 export const ContainerProducts = styled.div`
-
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 255px);

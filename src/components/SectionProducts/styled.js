@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-//SECTION PRODUTOS
-
 export const Cards = styled.section`
   position: relative;
 
-  .card-container {
+  .cardContainer {
     position: absolute;
     left: 0;
     top: 0;
@@ -24,11 +22,10 @@ export const Cards = styled.section`
     z-index: -1;
   }
 
-  .card-radius {
+  .cardRadius {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 197px; */
     min-height: 420px;
     background-color: #f5f5f5;
     border-radius: 20px;
@@ -36,18 +33,13 @@ export const Cards = styled.section`
     padding: 20px;
   }
 
-  :hover .card-container {
+  :hover .cardContainer {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
     width: calc(100% + 5px);
     height: calc(100% + 5px);
   }
 
-  /* .card-radius:hover {
-    transform: scale(1.1);
-    border-radius: 20px;
-  } */
-
-  .card-img {
+  .cardImg {
     background: rgb(84, 23, 162);
     background: linear-gradient(
       41deg,
@@ -61,24 +53,24 @@ export const Cards = styled.section`
     transition: 0.3s ease;
   }
 
-  .box-info {
+  .boxInfo {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
 
-  .card-info {
+  .cardInfo {
     padding-top: 10%;
     width: 100%;
     flex: 1;
   }
 
-  svg {
-    width: 20px;
-    height: 20px;
+  .cardButton > img {
+    width: 15px;
+    height: 15px;
   }
 
-  .card-footer {
+  .cardFooter {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -87,8 +79,7 @@ export const Cards = styled.section`
     border-top: 1px solid #ddd;
   }
 
-  /*Text*/
-  .text-title {
+  .textTitle {
     margin: 2% 0;
     font-weight: 700;
     font-size: 0.9em;
@@ -102,7 +93,7 @@ export const Cards = styled.section`
     -webkit-box-orient: vertical;
   }
 
-  .text-body {
+  .textBody {
     margin: 5% 0;
     font-size: 0.7em;
 
@@ -114,28 +105,43 @@ export const Cards = styled.section`
     -webkit-box-orient: vertical;
   }
 
-  /*Button*/
-  .card-button {
+  .cardButton {
     border: 1px solid #252525;
     display: flex;
+    margin-top: 4px;
     padding: 0.3em;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
+    align-items: center;
   }
 
-  .card-button:hover {
-    border: 1px solid #5316A5;
-    background-color: #5316A5;
+  .cardButton:hover {
+    border: 1px solid #5316a5;
+    background-color: #5316a5;
+    color: #f5f5f5;
   }
 
-  .card-radius:hover {
+  .cardButton:hover .svgIcon {
+    filter: invert(100%);
+  }
+
+  .cardRadius:hover {
     height: max-content;
   }
 
-  .card-radius:hover .card-info p {
+  .cardRadius:hover .cardInfo p {
     overflow: initial;
     text-overflow: initial;
     display: inline-block;
+  }
+
+  .svgIcon {
+    margin-top: 2px;
+  }
+
+  .textAddToCart {
+    font-size: 10px;
+    margin-left: 3px;
   }
 `;

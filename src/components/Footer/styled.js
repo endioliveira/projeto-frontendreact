@@ -1,20 +1,28 @@
 import styled from "styled-components";
 
 export const ContainerFooter = styled.div`
-  margin: 10%;
+  margin-top: 5%;
   color: #fff;
   display: flex;
-  flex-direction: column;
+  margin-bottom: 2%;
 
-  img {
-    width: 32px;
-    height: 32px;
+  .iconsSocial {
+    width: 28px;
+    height: 28px;
   }
 
   .section {
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .about {
+    margin-bottom: 20px;
+  }
+
+  .about, .contact {
+    margin-left: 25%;
   }
 
   h2 {
@@ -28,27 +36,13 @@ export const ContainerFooter = styled.div`
     word-break: break-word;
   }
 
-  .about,
-  .contact,
-  .payment-methods {
-    text-align: center;
-    align-items: center;
-  }
-
-  .container-contact div, .payment-methods div {
+  .container-contact div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-  }
-
-  .img {
-    display: flex;
-    justify-content: center;
-  }
+    gap: 3%;
+  } 
 
   .astronaut {
-    width: 20%;
-    height: 5%;
+    width: 35%;
+    margin-left: 50%;
   }
 `;
