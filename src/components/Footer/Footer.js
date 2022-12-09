@@ -1,8 +1,9 @@
 import React from "react";
 import { ContainerFooter } from "./styled";
-import imgEmail from "../../assets/icon-email.png";
-import iconInsta from "../../assets/instagram.png";
+import imgEmail from "../../assets/mail.svg";
+import iconInsta from "../../assets/instagram.svg";
 import astronaut from "../../assets/mascote-astronauta.png";
+import linkedin from "../../assets/linkedin.svg";
 
 export function Footer() {
   return (
@@ -20,12 +21,28 @@ export function Footer() {
           <h2>Entre em contato!</h2>
           <div className="container-contact">
             <div>
-              <img className="iconsSocial" src={imgEmail} alt="ícone do e-mail"/>
+              <img
+                className="iconsSocial"
+                src={linkedin}
+                alt="ícone do linkedin"
+              />
+              <span className="linkedin">linkedin.com/in/endioliveira</span>
+            </div>
+            <div>
+              <img
+                className="iconsSocial"
+                src={imgEmail}
+                alt="ícone do e-mail"
+              />
               <span>eomedeiros21@gmail.com</span>
             </div>
             <div>
-                  <img className="iconsSocial" src={iconInsta} alt="ícone do instagram"/>
-                  <span>@medeiros_eo</span>
+              <img
+                className="iconsSocial"
+                src={iconInsta}
+                alt="ícone do instagram"
+              />
+              <span>@medeiros_eo</span>
             </div>
           </div>
         </section>

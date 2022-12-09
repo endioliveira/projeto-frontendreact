@@ -34,7 +34,7 @@ export function Filters(props) {
               props.setSorting(event.target.value);
             }}
           >
-            <option selected value={""}>Escolha</option>
+            <option selected value={""}>Ordenar</option>
             <option value={"name"}>Nome</option>
             <option value={"price"}>Preço</option>
           </select>

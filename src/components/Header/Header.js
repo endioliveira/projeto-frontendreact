@@ -9,10 +9,10 @@ import {
   Content,
 } from "./styled";
 import logo from "../../assets/logo-spacezone1.png";
-import carrinho from "../../assets/icon-carrinho.png";
-import atendimento from "../../assets/icon-atendimento.png";
-import iconX from "../../assets/x-icon.png";
-import remove from "../../assets/remove-icon.png";
+import carrinho from "../../assets/icon-carrinho.svg";
+// import atendimento from "../../assets/icon-atendimento.png";
+import iconX from "../../assets/x.svg";
+import remove from "../../assets/remove-icon.svg";
 
 import { priceFormatter } from "../../utils/priceFormatter";
 
@@ -41,7 +41,7 @@ export function Header(props) {
       <ContainerIcons>
         <div className="contact">
           {/* <span className="contactEmail">medeiros_eo</span> */}
-          <img className="icon-contact" src={atendimento} alt="" />
+          {/* <img className="icon-contact" src={atendimento} alt="" /> */}
         </div>
         <div className="cartQuantity">
           <img
@@ -64,32 +64,42 @@ export function Header(props) {
                     <img src={item.image} alt={item.name} />
                     <div className="boxInfos">
                       <p>{item.name}</p>
-                      <p>{priceFormatter.format(item.price)}</p>
-                      <div className="boxQuantity">
-                        <div className="cardInfosQuantity">
-                          <span className="defineQuantity" onClick={() => props.removeQuantity(index)}>
-                            -
-                          </span>
-                          <span className="itemQuantity">{item.quantity}</span>
-                          <span className="defineQuantity" onClick={() => props.addQuantity(index)}>
-                            +
-                          </span>
-                        </div>
+                      <div className="cardInfosQuantity">
+                        <span
+                          className="defineQuantity"
+                          onClick={() => props.removeQuantity(index)}
+                        >
+                          -
+                        </span>
+                        <span className="itemQuantity">{item.quantity}</span>
+                        <span
+                          className="defineQuantity"
+                          onClick={() => props.addQuantity(index)}
+                        >
+                          +
+                        </span>
+                      </div>
+                    </div>
+                    <div className="boxRemoveEPrice">
                       <div className="remove">
                         <img
                           className="removeItem"
                           src={remove}
                           onClick={() => props.removeItem(index)}
-                          alt=""
+                          alt="ícone de lixeira"
                         />
                       </div>
-                      </div>
+                      <p className="price">
+                        {priceFormatter.format(item.price)}
+                      </p>
                     </div>
                   </div>
                 );
               })}
-              <h2>Total do carrinho: {priceFormatter.format(props.totalOfProducts)}</h2>
-
+              <h2>
+                Total do carrinho:{" "}
+                {priceFormatter.format(props.totalOfProducts)}
+              </h2>
             </Content>
           </ContainerSidebar>
         )}

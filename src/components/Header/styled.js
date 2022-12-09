@@ -7,11 +7,11 @@ export const ContainerHeader = styled.header`
   left: 0;
   z-index: 1;
   background: #070b34;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
+
 export const LogoSpaceZone = styled.img`
   margin-top: 1px;
   width: 6%;
@@ -29,12 +29,8 @@ export const ContainerInput = styled.div`
     border-radius: 10px;
     padding: 10px 25px;
     background: transparent;
-    max-width: 190px;
+    max-width: 500px;
   }
-
-  /* input:active {
-    box-shadow: 2px 2px 15px #8707ff inset;
-  } */
 `;
 
 export const ButtonPesquisar = styled.button`
@@ -59,80 +55,56 @@ export const ContainerIcons = styled.div`
     cursor: pointer;
   }
 
-  .icon-contact {
-    filter: invert(100%);
-    position: relative;
-  }
-
-  .icon-contact:hover {
-    cursor: pointer;
-  }
-
-  /* .contact > span {
-    font-size: 0.8rem;
-    position: absolute;
-    bottom: 0;
-    right: 60px;
-    color: white;
-    display: none;
-  } */
-
-  /* .contact:hover > span{
-    display: block;
-  } */
-
   .cartQuantity {
     position: relative;
   }
 
   .cartLength {
-    font-size: 0.8rem;
+    position: absolute;
+    font-size: 0.7rem;
     background-color: #8606fe;
     color: #fff;
     font-weight: bold;
     border-radius: 50%;
     top: 0;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 17px;
     padding: 0;
     right: -10px;
-    line-height: 1.2;
-    position: absolute;
+    /* line-height: 1.2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 export const ContainerSidebar = styled.div`
-  overflow-y: auto;
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    display: none;
-  }
-
-
+ 
   color: white;
-  background: #070b34;
+  background: rgb(7, 11, 52, 0.97);
   position: fixed;
   height: 100%;
   top: 0px;
   right: 0px;
-  width: 400px;
+  width: 450px;
   right: ${(props) => (props.sidebar ? "0" : "-100%")};
   animation: showSidebar 0.4s;
 
   > h3 {
-    text-align: center;
     margin-top: 15px;
-    margin-right: 40%;
-
+    margin-left: 5%;
+    margin-bottom: 3%;
   }
+
   > img {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-    margin-left: 160px;
+    width: 25px;
+    height: 25px;
+    margin-top: 17px;
+    margin-left: 26rem;
     cursor: pointer;
   }
+
   @keyframes showSidebar {
     from {
       opacity: 0;
@@ -146,48 +118,64 @@ export const ContainerSidebar = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 30px;
 
+overflow-y: auto;
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+  }
+
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
   .boxProducts {
     display: flex;
-    padding: 2px;
-    margin: 1rem;
+    margin-bottom: 2.3rem;
     width: 90%;
-    justify-content: space-between;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #8606fe;
   }
 
-  img {
+  .boxProducts > img {
+    margin-bottom: 2rem;
     width: 90px;
     height: 90px;
+    border-radius: 0.5rem;
+    background: rgb(84, 23, 162);
+    background: linear-gradient(
+      41deg,
+      rgba(84, 23, 162, 1) 0%,
+      rgba(67, 9, 226, 1) 100%
+    );
   }
 
   .boxInfos {
-    font-size: 0.8rem;
+    margin-left: 0.6rem;
+  }
+
+  .itemQuantity {
+    margin: 18px;
+    font-size: 1rem;
+  }
+
+  .cardInfoQuantityERemove {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .boxQuantity {
-    display: flex;
-    margin-top: 1rem;
-    align-items: center;
-    margin-left: 20px;
-    justify-content: center;
-  }
-  
-  .itemQuantity {
-    margin: 20px;
-    font-size: 0.8rem;
   }
 
   .cardInfosQuantity {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
     border: 1px solid #8606fe;
-    width: 8rem;
+    width: 6rem;
+    height: 25px;
     border-radius: 7px;
-    padding: 2px;
+    margin-top: 1rem;
   }
 
   .defineQuantity {
@@ -203,11 +191,23 @@ export const Content = styled.div`
   .removeItem {
     width: 20px;
     height: 20px;
-    margin-top: 4px;
-    margin-left: 10px;
+    margin-top: 1px;
+    margin-left: 4rem;
   }
 
   .removeItem:hover {
     cursor: pointer;
+  }
+
+  .price {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 1.9rem;
+  }
+
+  > h2 {
+    position: fixed;
+    bottom: 0%;
+    margin-bottom: 0.5rem; 
   }
 `;
