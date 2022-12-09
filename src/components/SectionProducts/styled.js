@@ -142,6 +142,7 @@ export const Cards = styled.section`
 
   .textAddToCart {
     font-size: 10px;
+    margin-top: 0.1rem;
     margin-left: 3px;
   }
 `;

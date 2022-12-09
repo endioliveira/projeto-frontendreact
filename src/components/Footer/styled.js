@@ -4,6 +4,7 @@ export const ContainerFooter = styled.div`
   margin-top: 5%;
   color: #fff;
   display: flex;
+  justify-content: center;
   margin-bottom: 2%;
 
   .iconsSocial {
@@ -41,8 +42,13 @@ export const ContainerFooter = styled.div`
     gap: 3%;
   } 
 
+  .linkedin {
+    margin-top: 3px;
+  }
+
   .astronaut {
     width: 35%;
-    margin-left: 50%;
+    margin-left: 60%;
+    margin-top: 2%;
   }
 `;

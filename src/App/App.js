@@ -31,18 +31,6 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }
   }
-
-  .message {
-    height: 90px;
-    width: 250px;
-    position: absolute;
-    margin: 0 auto;
-    background-color: red;
-    font-size:1.1rem;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-}
 `;
 
 function App(props) {
@@ -50,68 +38,65 @@ function App(props) {
   const [minimumPrice, setMinimumPrice] = useState(-Infinity);
   const [maximumPrice, setMaximumPrice] = useState(Infinity);
   const [sorting, setSorting] = useState("");
-  const [order, setOrder] = useState("asc"); 
+  const [order, setOrder] = useState("asc");
   const [color, setColor] = useState("");
   const [category, setCategory] = useState("");
   const [cart, setCart] = useState([]);
-  // const [message, setMessage] = useState(false);
 
-    const addToCart = (item) => {
-      const newCart = [...cart]
+  const addToCart = (item) => {
+    const newCart = [...cart];
 
-      const productFound = newCart.find(
-          (productInCart) => productInCart.id === item.id
-      )
+    const productFound = newCart.find(
+      (productInCart) => productInCart.id === item.id
+    );
 
-      if (!productFound) {
-          const newProduct = {...item, quantity: 1}
-          newCart.push(newProduct)
-      } else {
-          productFound.quantity++
-      }
+    if (!productFound) {
+      const newProduct = { ...item, quantity: 1 };
+      newCart.push(newProduct);
+    } else {
+      productFound.quantity++;
+    }
 
-      setCart(newCart)
-      localStorage.setItem('cart', JSON.stringify(newCart));
-  }
-
+    setCart(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
 
   const addQuantity = (index) => {
-    const newCart = [...cart]
-    newCart[index].quantity++
-    setCart(newCart)
-    localStorage.setItem('cart', JSON.stringify(newCart));
-  }
+    const newCart = [...cart];
+    newCart[index].quantity++;
+    setCart(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
 
   const removeQuantity = (index) => {
-    const newCart = [...cart]
-    if(newCart[index].quantity === 1) {
-      newCart.splice(index,1)
-      setCart(newCart)
-      localStorage.setItem('cart', JSON.stringify(newCart));
-      return false
-    } 
-    newCart[index].quantity--
-    setCart(newCart)
-    localStorage.setItem('cart', JSON.stringify(newCart));
-  }
+    const newCart = [...cart];
+    if (newCart[index].quantity === 1) {
+      newCart.splice(index, 1);
+      setCart(newCart);
+      localStorage.setItem("cart", JSON.stringify(newCart));
+      return false;
+    }
+    newCart[index].quantity--;
+    setCart(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
 
   const removeItem = (index) => {
-    const newCart = [...cart]
-    newCart.splice(index,1)
-    setCart(newCart)
-    localStorage.setItem('cart', JSON.stringify(newCart));
-  }
+    const newCart = [...cart];
+    newCart.splice(index, 1);
+    setCart(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
 
   const totalOfProducts = cart.reduce(
-    (acc, item) => item.price * item.quantity + acc,
+    (accumulator, item) => item.price * item.quantity + accumulator,
     0
-)
+  );
 
   useEffect(() => {
     const newCart = JSON.parse(window.localStorage.getItem("cart")) || [];
     setCart(newCart);
   }, []);
-
 
   return (
     <>
@@ -136,7 +121,6 @@ function App(props) {
             }}
           />
         </div>
- 
       </SectionHome>
 
       <ContainerMain>
@@ -190,7 +174,7 @@ function App(props) {
                 case "name":
                   return currentProduct.name.localeCompare(nextProduct.name);
                 default:
-                  return ""
+                  return "";
               }
             })
             .sort(() => {
@@ -209,11 +193,6 @@ function App(props) {
                 />
               );
             })}
-          {/* {message && (
-            <div className="message">
-              Esse produto já foi adicionado ao carrinho!
-            </div>
-          )} */}
         </ContainerProducts>
       </ContainerMain>
       <Footer />
